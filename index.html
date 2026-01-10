@@ -1,350 +1,397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Daniel Durante -- Programmer, Consultant, Author, Technical Editor</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Daniel Durante cv/resume" />
-    <meta name="keywords"
-        content="programmer, consultant, c, go, golang, rust, node, nodejs, typescript, php, ruby, python" />
-    <meta name="developer" content="Daniel Durante">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Durante - Professional Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <!-- FAV AND ICONS   -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="shortcut icon" href="assets/images/apple-icon.png">
-    <link rel="shortcut icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
-    <link rel="shortcut icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
 
-    <!-- Google Font-->
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
-    <!-- Animate CSS-->
-    <link rel="stylesheet" href="assets/plugins/css/animate.css">
-    <!-- Custom CSS-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    /* Static Striped Header Bar - Zebra Gum Style */
+    .color-bar {
+      height: 8px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background: repeating-linear-gradient(90deg,
+          #b8e6b8 0px,
+          /* Pastel Green */
+          #b8e6b8 20px,
+          #ffb8b8 20px,
+          /* Pastel Red */
+          #ffb8b8 40px,
+          #ffd4a3 40px,
+          /* Pastel Orange */
+          #ffd4a3 60px,
+          #fff5b8 60px,
+          /* Pastel Yellow */
+          #fff5b8 80px,
+          #b8d4ff 80px,
+          /* Pastel Blue */
+          #b8d4ff 100px);
+    }
 
-    <!-- Colors -->
-    <link rel="stylesheet" href="assets/css/colors/defauld.css" title="defauld">
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: white;
+      min-height: 100vh;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 40px 0;
+      border-bottom: 2px solid #e0e0e0;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      color: #7f8c8d;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Section Styles */
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Experience and Education Items */
+    .item {
+      margin-bottom: 25px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .item-title {
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #34495e;
+    }
+
+    .item-company {
+      font-size: 1em;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+
+    .item-date {
+      color: #95a5a6;
+      font-size: 0.9em;
+    }
+
+    .item-description {
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .item-description ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .item-description li {
+      margin-bottom: 5px;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-category {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .skill-category h3 {
+      font-size: 1em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .skill-category p {
+      color: #666;
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+
+    /* Summary Section */
+    .summary {
+      font-size: 1.05em;
+      color: #555;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px 15px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .contact-info {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .item-date {
+        margin-top: 5px;
+      }
+    }
+
+    /* Print Styles */
+    @media print {
+      .color-bar {
+        display: none;
+      }
+
+      .container {
+        box-shadow: none;
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 
-<body class="white-vertion black-bg">
-    <!-- Start Loader -->
-    <div class="section-loader">
-        <div class="loader">
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!-- End Loader -->
+<body>
+  <div class="color-bar"></div>
 
-    <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg mh-nav nav-btn">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <ul class="navbar-nav mr-auto ml-auto">
-                            <li class="nav-item col-sm-3">
-                                <h1 id="dante-header">DANTE</h1>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#mh-home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#mh-about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#mh-service">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#mh-experience">Experiences</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
+  <div class="container">
+    <header>
+      <h1>Daniel Durante</h1>
+      <div class="subtitle">CTO, Author, Principal Programmer</div>
+      <div class="contact-info">
+        <span>📧 <a
+            href="mailto:&#109;&#101;&#064;&#100;&#097;&#110;&#105;&#101;&#108;&#100;&#117;&#114;&#097;&#110;&#116;&#101;&#046;&#099;&#111;&#109;">&#109;&#101;&#064;&#100;&#097;&#110;&#105;&#101;&#108;&#100;&#117;&#114;&#097;&#110;&#116;&#101;&#046;&#099;&#111;&#109;</a></span>
+        <span>📍 Florida, USA</span>
+        <span>💼 <a href="https://www.linkedin.com/in/daniel-durante">linkedin.com/in/daniel-durante</a></span>
+      </div>
     </header>
 
-    <section class="mh-home" id="mh-home">
-        <div class="home-ovimg">
-            <div class="container">
-                <div class="row xs-column-reverse section-separator vertical-middle-content home-padding">
-                    <div class="col-sm-6">
-                        <div class="mh-header-info">
-                            <div class="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-                                <span>Hello I'm</span>
-                            </div>
-
-                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Dan<span
-                                    class="light-word">iel</span> <span class="light-word">Duran</span>te</h2>
-                            <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s" id="rotate_word">
-                                <span data-wow-duration="0.8s" class="wow fadeInRight"></span>
-                            </h4>
-
-                            <ul>
-                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i
-                                        class="fa fa-envelope"></i><a
-                                        href="mailto:&#109;&#101;&#064;&#100;&#097;&#110;&#105;&#101;&#108;&#100;&#117;&#114;&#097;&#110;&#116;&#101;&#046;&#099;&#111;&#109;">&#109;&#101;&#064;&#100;&#097;&#110;&#105;&#101;&#108;&#100;&#117;&#114;&#097;&#110;&#116;&#101;&#046;&#099;&#111;&#109;</a>
-                                </li>
-                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i
-                                        class="fa fa-map-marker"></i>
-                                    <address>Gainesville, United States</address>
-                                </li>
-                            </ul>
-
-                            <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
-                                <li><a href="https://github.com/durango"><i class="fa fa-github"></i></a></li>
-                                <li><a href="www.linkedin.com/in/daniel-durante"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
-                            <div class="img-border">
-                                <img src="assets/images/me-avatar.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section>
+      <h2>Professional Summary</h2>
+      <div class="summary">
+        Former CTO of options &amp; derivatives market analysis platform, author &amp; technical editor for Pakt
+        publishing, consultant &amp; strategist for Fortune 100 companies,
+        and a full stack developer for over 25+ years. Developed on projects that have been used by
+        companies such as Hubcash, Stripe, and Walmart. If you need a project to go from zero to one let's talk.
+      </div>
     </section>
 
-    <section class="mh-about" id="mh-about">
-        <div class="container">
-            <div class="row section-separator">
-                <div class="col-sm-12 col-md-6">
-                    <div class="mh-about-inner">
-                        <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About Me</h2>
-                        <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">I am an author &amp;
-                            technical editor for Pakt publishing, consultant &amp; strategist for Fortune 100 companies,
-                            and a full stack (+ heap) developer from the age of 12. My code exists in infrastructures
-                            such as Hubcash, Stripe, and Walmart. If you need a project to go from zero to one let's
-                            talk.
-                        </p>
-                        <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                            <ul>
-                                <li><span>golang</span></li>
-                                <li><span>rust</span></li>
-                                <li><span>nodejs</span></li>
-                                <li><span>typescript</span></li>
-                                <li><span>postgres & dba</span></li>
-                                <li><span>terraform</span></li>
-                                <li><span>saltstack</span></li>
-                                <li><span>html</span></li>
-                                <li><span>css</span></li>
-                                <li><span>javascript</span></li>
-                                <li><span>react</span></li>
-                                <li><span>wordpress</span></li>
-                                <li><span>authorize.net</span></li>
-                                <li><span>paypal</span></li>
-                                <li><span>stripe</span></li>
-                            </ul>
-                        </div>
-                        <a href="" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s"
-                            data-wow-delay="0.4s">Downlaod CV <i class="fa fa-download"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section>
+      <a href="assets/Resume-2025.docx">Download CV</a>
     </section>
 
-    <section class="mh-service" id="mh-service">
-        <div class="container">
-            <div class="row section-separator">
-                <div class="col-sm-12 text-center section-title wow fadeInUp" data-wow-duration="0.8s"
-                    data-wow-delay="0.2s">
-                    <h2>What I do</h2>
-                </div>
-                <div class="col-sm-4">
-                    <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                        data-wow-delay="0.5s">
-                        <i class="fa fa-shield iron-color"></i>
-                        <h3>Security Consulting</h3>
-                        <p>
-                            SQL Injections, XSS, CSRF, Cross Origins, SSL man-in-the-middle attacks, and
-                            pentesting.<br><br>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                        data-wow-delay="0.7s">
-                        <i class="fa fa-object-ungroup sky-color"></i>
-                        <h3>App Development</h3>
-                        <p>
-                            Consultation on how to build your project properly. From UI sketches to a minimal viable
-                            product in 30 - 90 days
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                        data-wow-delay="0.3s">
-                        <i class="fa fa-bullseye purple-color"></i>
-                        <h3>Embeded Development</h3>
-                        <p>Develop from bar code scanners to mobile devices with PICs, ARMs, or any x86 chipset<br><br>
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <section>
+      <h2>Experience</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Infrastructure Director</div>
+            <div class="item-company">LoyalLink</div>
+          </div>
+          <div class="item-date">2023 - Present</div>
         </div>
+        <div class="item-description">
+          <ul>
+            <li>Architected auto-scaling infrastructure on AWS capable of handling 10x traffic spikes dur-ing major
+              on-sale events, reducing page load times by 30%.</li>
+            <li>Architected and deployed cloud-native applications using AWS services, reducing infrastructure costs by
+              30%</li>
+            <li>Built infrastructure-as-code using Terraform and Terragrunt, reducing environment provi-sioning time
+              from days to under 30 minutes.</li>
+            <li>Developed CI/CD pipelines using GitHub Actions CI that enabled 50+ daily deployments with zero-downtime
+              releases.</li>
+            <li>Automated infrastructure testing and security scanning, catching 80% of configuration is-sues before
+              production.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">CTO</div>
+            <div class="item-company">Genesis Volatility</div>
+          </div>
+          <div class="item-date">2018 - 2023</div>
+        </div>
+        <div class="item-description">
+          <ul>
+            <li>Designed fault-tolerant matching engine architecture achieving 99.99% uptime across
+              perpetual futures, options, and structured products.</li>
+            <li>Built real-time Greeks calculation engine (delta, gamma, vega, theta, rho) enabling dy-namic hedging for
+              market makers.</li>
+            <li>Architected and scaled a high-performance derivatives analysis engine processing 500K+ orders per second
+              with sub-millisecond latency.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Principal Developer</div>
+            <div class="item-company">FRST</div>
+          </div>
+          <div class="item-date">2018 - 2020</div>
+        </div>
+        <div class="item-description">
+          <ul>
+            <li>Maintained an infrastructure (go and rust) for processing real time market data from over 10 exchanges
+              including 900+ markets with a 99.9% SLA.</li>
+            <li>Processed on chain data (UXTO) and using 3rd party vendors to act as verifica-tion/Source-of-Truths.
+            </li>
+            <li>Performed DevOps tasks (with Terraform and Saltstack) under AWS. Maintained logs,
+              servers, and managed billing requirements.</li>
+            <li>Mentored and proctored students for an MBA/Engineering program at University of Chicago.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
+    <!-- <section>
+      <h2>Education</h2>
 
-    <section class="mh-experince" id="mh-experience">
-        <div class="bolor-overlay">
-            <div class="container">
-                <div class="row section-separator">
-                    <div class="col-sm-10 offset-1">
-                        <div class="mh-work">
-                            <h3>Work Experience</h3>
-                            <div class="mh-experience-deatils">
-                                <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                                    data-wow-delay="0.4s">
-                                    <h4>Principal Software Engineer <a href="http://frst.com">FRST</a></h4>
-                                    <div class="mh-eduyear">2018-current</div>
-                                    <span>Responsibility :</span>
-                                    <ul class="work-responsibility">
-                                        <li><i class="fa fa-circle"></i>Maintained an infrastructure (go + rust) for
-                                            processing real time market data from over 10 exchanges including 900+
-                                            markets with a 99.9% SLA (Service Level Agreement)</li>
-                                        <li><i class="fa fa-circle"></i>Processed on chain data (UXTO) and using 3rd
-                                            party vendors to act as verification/SoTs (Source of Truths)</li>
-                                        <li><i class="fa fa-circle"></i>Performed DevOps tasks (with Terraform +
-                                            Saltstack) under AWS. Maintained logs, servers, and billing requirements.
-                                        </li>
-                                        <li><i class="fa fa-circle"></i>Mentored and proctored students for an
-                                            MBA/Engineering program</li>
-                                    </ul>
-                                </div>
-                                <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                                    data-wow-delay="0.6s">
-                                    <h4>Lead Developer (Contractor) <a href="http://www.bmbsqd.com/">Bmbsqd</a></h4>
-                                    <div class="mh-eduyear">2016</div>
-                                    <span>Responsibility :</span>
-                                    <ul class="work-responsibility">
-                                        <li><i class="fa fa-circle"></i>Converted and troubleshooted AccessDB data to
-                                            MSSQL which was later converted to ElasticSearch data</li>
-                                        <li><i class="fa fa-circle"></i>Integrated EasyPost, Mandrill, MailChimp,
-                                            iTunesConnect, and APN (Access Point Names) for a mobile nail boutique
-                                            application</li>
-                                        <li><i class="fa fa-circle"></i>Created, and maintained, a packaging and
-                                            fulfillment label program</li>
-                                    </ul>
-                                </div>
-                                <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                                    data-wow-delay="0.7s">
-                                    <h4>Developer (Contractor) <a href="https://trendybutler.com/">TrendyButler</a></h4>
-                                    <div class="mh-eduyear">2016-2018</div>
-                                    <span>Responsibility :</span>
-                                    <ul class="work-responsibility">
-                                        <li><i class="fa fa-circle"></i>Created a synchronize system (NodeJS) for
-                                            several 3rd party integrations related to invoicing, billing, and shipping
-                                            along with a custom PO inventory system</li>
-                                        <li><i class="fa fa-circle"></i>Integrated LiteView fulfilling services and
-                                            TradeGecko’s inventory management software</li>
-                                        <li><i class="fa fa-circle"></i>Consulted on UX/UI decisions along with metric
-                                            tracking integration workflows</li>
-                                    </ul>
-                                </div>
-                                <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                                    data-wow-delay="0.7s">
-                                    <h4>Web Developer <a href="https://www.mobiquity.com/">Mobiquity</a></h4>
-                                    <div class="mh-eduyear">2014-2015</div>
-                                    <span>Responsibility :</span>
-                                    <ul class="work-responsibility">
-                                        <li><i class="fa fa-circle"></i>Developed an e-commerce website for health
-                                            clinics (HIPAA compliant) using Magento (v1) as the
-                                            framework. Patched and modified Magento’s REST API modules for a single page
-                                            application written with AngularJS</li>
-                                        <li><i class="fa fa-circle"></i>Used SASS, Browserify, Gulp, AngularJS, and
-                                            Karma for building a frontend portal for a life
-                                            insurance company</li>
-                                        <li><i class="fa fa-circle"></i>Built a proxy server with NodeJS for
-                                            communicating with an external API</li>
-                                    </ul>
-                                </div>
-                                <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                                    data-wow-delay="0.7s">
-                                    <h4>Lead Developer <a href="https://fractureme.com/">Fracture</a></h4>
-                                    <div class="mh-eduyear">2011-2014</div>
-                                    <span>Responsibility :</span>
-                                    <ul class="work-responsibility">
-                                        <li><i class="fa fa-circle"></i>Built internal software for fulfillment
-                                            management, CNC machinery, and basic accounting for the board of directors
-                                        </li>
-                                        <li><i class="fa fa-circle"></i>Created APIs for Authorize.net and PayPal,
-                                            package rates with FedEx/USPS/UPS, and
-                                            image manipulation (color profile management, filters, etc.)</li>
-                                        <li><i class="fa fa-circle"></i>Converted several services from PHP & jQuery to
-                                            Node.JS & AngularJS</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Bachelor of Science in Computer Science</div>
+            <div class="item-company">University of California, Berkeley</div>
+          </div>
+          <div class="item-date">2011 - 2015</div>
         </div>
+        <div class="item-description">
+          GPA: 3.8/4.0 • Dean's List • Computer Science Honor Society
+        </div>
+      </div>
+    </section> -->
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <p>PHP 4+, NodeJS 0.6+, Ruby, Python, Golang 1.2+, Rust 1.1+</p>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks</h3>
+          <p>jQuery, AngularJS, Backbone, Ruby on Rails 3, ExpressJS, Django, CakePHP, CodeIgniter, Si-natra, Magento,
+            PhoneGap, Gulp, Grunt, Karma, Protractor, Babel, React/Redux, Rwact Native, InfernoJS, VueJS</p>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud & DevOps</h3>
+          <p>AWS, Docker, Kubernetes, Jenkins, Terraform, GitHub Actions, Nginx, Cherokee, Apache 2+, HaProxy, Caddy</p>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <p>MySQL 4+, Postgres 9.1+, MongoDB, CouchDB, ArangoDB, Redis, Riak, FoundationDB, ElasticSearch, DynamoDB</p>
+        </div>
+      </div>
     </section>
 
-    <footer class="mh-footer" id="mh-contact">
-        <div class="">
-            <div class="container">
-                <div class="row section-separator">
-                    <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="text-left text-xs-center">
-                                    <p>All right reserved Daniel Durante &copy; 2019</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="social-icon">
-                                    <li><a href="https://github.com/durango"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="www.linkedin.com/in/daniel-durante"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section>
+      <h2>Projects &amp; Contributions</h2>
+      <div class="item">
+        <div class="item-description">
+          <ul>
+            <li>InfernoJS - https://github.com/infernojs/inferno - Previously on the board of maintainers, implemented
+              the initial setup for inferno-redux located at https://github.com/durango/inferno/tree/inferno-redux</li>
+            <li>Go-Credit-Card - https://github.com/durango/go-credit-card - Credit card validator written in Go-lang
+              using the Luhn algorithm. Was used in a major credit card processing company.</li>
+            <li>SequelizeJS - https://github.com/sequelize/sequelize - One of the first NodeJS ORMs. Core member,
+              oversees issues, implementation of hooks and various other helper methods.</li>
+            <li>Auth.net CIM - https://github.com/durango/authorize-net-cim - Authorize.net’s CIM API in NodeJS.
+              Previously featured within their documentation.</li>
+            <li>Author - Pakt Publishing “Supercharging Node.js Applications with Sequelize", published 2018 - ISBN13:
+              978-1801811552</li>
+            <li>Author - Pakt Publishing “Rust Standard Library Cookbook", published 2018 - ISBN13: 978-1788623926</li>
+            <li>Technical Reviewer - Pakt Publishing “Rust High Performance", published 2018 - ISBN13: 978-1788399487
+            </li>
+            <li>Technical Reviewer - Pakt Publishing “PostgreSQL Developer’s Guide", published 2015 - ISBN13:
+              978-1783989027</li>
+            <li>Technical Reviewer - Pakt Publishing “PostgresSQL 9.6 High Performance 2nd Edition” - ISBN13:
+              978-1849510301</li>
+            <li>Technical Reviewer - Pakt Publishing “Rust Programming by Example” - ISBN13: 978-1788390637</li>
+          </ul>
         </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="assets/plugins/js/jquery.min.js"></script>
-    <!-- popper -->
-    <script src="assets/plugins/js/popper.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/plugins/js/bootstrap.min.js"></script>
-    <!-- validator -->
-    <script src="assets/plugins/js/validator.min.js"></script>
-    <!-- wow -->
-    <script src="assets/plugins/js/wow.min.js"></script>
-    <!-- circle progress-->
-    <script src="assets/plugins/js/circle-progress.js"></script>
-    <!-- jquery nav -->
-    <script src="assets/plugins/js/jquery.nav.js"></script>
-    <!-- Custom Scripts-->
-    <script src="assets/js/custom-scripts.js"></script>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
