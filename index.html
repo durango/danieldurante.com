@@ -4,7 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Durante - Professional Resume</title>
+  <title>Daniel Durante — CTO, Author &amp; Principal Programmer</title>
+  <meta name="description"
+    content="Daniel Durante — CTO and published author with 25+ years as a full-stack engineer. Packt author of Node.js &amp; Rust books; built systems for Stripe and Walmart.">
+  <link rel="canonical" href="https://danieldurante.com/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Daniel Durante">
+  <meta name="theme-color" content="#2c3e50">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/images/apple-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Daniel Durante">
+  <meta property="og:title" content="Daniel Durante — CTO, Author &amp; Principal Programmer">
+  <meta property="og:description"
+    content="CTO and published author with 25+ years as a full-stack engineer. Packt author of Node.js &amp; Rust books; built systems for Stripe and Walmart.">
+  <meta property="og:url" content="https://danieldurante.com/">
+  <meta property="og:image" content="https://danieldurante.com/assets/images/me-avatar.jpg">
+  <meta property="og:image:width" content="1768">
+  <meta property="og:image:height" content="1768">
+  <meta property="og:image:alt" content="Headshot of Daniel Durante, CTO and author">
+  <meta property="og:locale" content="en_US">
+  <meta property="profile:first_name" content="Daniel">
+  <meta property="profile:last_name" content="Durante">
+  <meta property="profile:username" content="durango">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Daniel Durante — CTO, Author &amp; Principal Programmer">
+  <meta name="twitter:description"
+    content="CTO and published author with 25+ years as a full-stack engineer. Packt author of Node.js &amp; Rust books; built systems for Stripe and Walmart.">
+  <meta name="twitter:image" content="https://danieldurante.com/assets/images/me-avatar.jpg">
+  <meta name="twitter:image:alt" content="Headshot of Daniel Durante, CTO and author">
   <style>
     * {
       margin: 0;
@@ -13,10 +47,10 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
+      font-family: sans-serif;
+      line-height: 1.4;
       color: #333;
-      background-color: #f9f9f9;
+      background-color: #fff;
     }
 
     /* Static Striped Header Bar - Zebra Gum Style */
@@ -52,15 +86,25 @@
       padding: 40px 20px;
       background-color: white;
       min-height: 100vh;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); */
     }
 
     /* Header Section */
     header {
       text-align: center;
       padding: 40px 0;
-      border-bottom: 2px solid #e0e0e0;
+      border-bottom: 1px solid #f3f3f3;
+      /* #e0e0e0; */
       margin-bottom: 40px;
+    }
+
+    .headshot {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #fafafa;
     }
 
     h1 {
@@ -102,7 +146,7 @@
       color: #2c3e50;
       margin-bottom: 20px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid #f3f3f3;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -224,40 +268,194 @@
       }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://danieldurante.com/#website",
+        "url": "https://danieldurante.com/",
+        "name": "Daniel Durante",
+        "description": "Personal site of Daniel Durante — Author and CTO (Chief Technology Officer), principal full-stack programmer.",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://danieldurante.com/#daniel" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://danieldurante.com/#profilepage",
+        "url": "https://danieldurante.com/",
+        "name": "Daniel Durante — CTO, Author, Principal Programmer",
+        "inLanguage": "en-US",
+        "isPartOf": { "@id": "https://danieldurante.com/#website" },
+        "mainEntity": { "@id": "https://danieldurante.com/#daniel" },
+        "about": { "@id": "https://danieldurante.com/#daniel" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://danieldurante.com/assets/images/me-avatar.jpg"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://danieldurante.com/#daniel",
+        "name": "Daniel Durante",
+        "url": "https://danieldurante.com/",
+        "mainEntityOfPage": { "@id": "https://danieldurante.com/#profilepage" },
+        "description": "Author and Chief Technology Officer (CTO) with 25+ years as a full-stack developer. Author of two Packt Publishing titles, former CTO of an options & derivatives market-analysis platform, and contributor to projects used by Hubcash, Stripe, and Walmart.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://danieldurante.com/assets/images/me-avatar.jpg",
+          "caption": "Daniel Durante"
+        },
+        "email": "me@danieldurante.com",
+        "jobTitle": [
+          "Chief Technology Officer",
+          "Author",
+          "Infrastructure Director",
+          "Principal Programmer"
+        ],
+        "hasOccupation": [
+          {
+            "@type": "Occupation",
+            "name": "Chief Technology Officer (CTO)",
+            "occupationLocation": {
+              "@type": "AdministrativeArea",
+              "name": "Florida, USA"
+            }
+          },
+          {
+            "@type": "Occupation",
+            "name": "Author"
+          },
+          {
+            "@type": "Occupation",
+            "name": "Infrastructure Director"
+          }
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "LoyalLink"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Florida",
+          "addressCountry": "US"
+        },
+        "knowsAbout": [
+          "Options and derivatives pricing",
+          "Options Greeks (delta, gamma, vega, theta, rho)",
+          "Distributed systems",
+          "Real-time market data infrastructure",
+          "Infrastructure as code",
+          "Rust",
+          "Go",
+          "Node.js",
+          "PHP",
+          "Ruby",
+          "Python",
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "GitHub Actions",
+          "Sequelize ORM",
+          "InfernoJS"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/daniel-durante",
+          "https://github.com/durango"
+        ]
+      },
+      {
+        "@type": "Book",
+        "@id": "https://danieldurante.com/#book-sequelize",
+        "name": "Supercharging Node.js Applications with Sequelize",
+        "author": { "@id": "https://danieldurante.com/#daniel" },
+        "publisher": { "@type": "Organization", "name": "Packt Publishing" },
+        "datePublished": "2022",
+        "isbn": "9781801811552",
+        "identifier": { "@type": "PropertyValue", "propertyID": "ISBN", "value": "9781801811552" },
+        "inLanguage": "en",
+        "bookFormat": "https://schema.org/Paperback",
+        "keywords": [ "Node.js", "Sequelize", "ORM", "PostgreSQL", "MySQL" ]
+      },
+      {
+        "@type": "Book",
+        "@id": "https://danieldurante.com/#book-rust-cookbook",
+        "name": "Rust Standard Library Cookbook",
+        "author": { "@id": "https://danieldurante.com/#daniel" },
+        "publisher": { "@type": "Organization", "name": "Packt Publishing" },
+        "datePublished": "2018",
+        "isbn": "9781788623926",
+        "identifier": { "@type": "PropertyValue", "propertyID": "ISBN", "value": "9781788623926" },
+        "inLanguage": "en",
+        "bookFormat": "https://schema.org/Paperback",
+        "keywords": [ "Rust", "Rust standard library", "Systems programming" ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <div class="color-bar"></div>
+  <!-- <div class="color-bar"></div> -->
 
   <div class="container">
     <header>
-      <h1>Daniel Durante</h1>
-      <div class="subtitle">CTO, Author, Principal Programmer</div>
+      <img class="headshot" src="assets/images/me-avatar.jpg" width="160" height="160"
+        alt="Daniel Durante, CTO and author">
+      <h1>Daniel Durante - CTO &amp; Author</h1>
+      <div class="subtitle">Chief Technology Officer · Author · Researcher · Action Hero</div>
       <div class="contact-info">
-        <span>📧 <a
+        <span><a
             href="mailto:&#109;&#101;&#064;&#100;&#097;&#110;&#105;&#101;&#108;&#100;&#117;&#114;&#097;&#110;&#116;&#101;&#046;&#099;&#111;&#109;">&#109;&#101;&#064;&#100;&#097;&#110;&#105;&#101;&#108;&#100;&#117;&#114;&#097;&#110;&#116;&#101;&#046;&#099;&#111;&#109;</a></span>
-        <span>📍 Florida, USA</span>
-        <span>💼 <a href="https://www.linkedin.com/in/daniel-durante">linkedin.com/in/daniel-durante</a></span>
+        <span><a href="https://www.linkedin.com/in/daniel-durante">linkedin.com/in/daniel-durante</a></span>
         <span><a href="https://github.com/durango">github.com/durango</a></span>
+        <!-- <span>Florida, USA</span> -->
       </div>
     </header>
 
     <section>
       <h2>Professional Summary</h2>
       <div class="summary">
-        Former CTO of options &amp; derivatives market analysis platform, author &amp; technical editor for Pakt
-        publishing, consultant &amp; strategist for Fortune 100 companies,
-        and a full stack developer for over 25+ years. Developed on projects that have been used by
-        companies such as Hubcash, Stripe, and Walmart. If you need a project to go from zero to one let's talk.
+        Featured as a hero in real life and on the big printing press in the <a
+          href="https://en.wikipedia.org/wiki/Event_Horizon:_Inferno">Event Horizon: Inferno</a> comic series. Currently
+        CTO of Civic-Chain, a Transparency-as-a-Service (TaaS) platform for financial and government institutions.
+        Former CTO of an options and derivatives market analysis platform; author and technical editor for Packt
+        Publishing; consultant and strategist for Fortune 100 companies; and full-stack developer with over 25 years of
+        experience. Developed projects used by companies such as Hubcash, Stripe, and Walmart. If you need a project to
+        go from zero to one, let's talk.
       </div>
     </section>
 
     <section>
-      <a href="assets/Resume-2025.docx">Download CV</a>
+      <a href="assets/Resume-2025.pdf">Download CV</a>
     </section>
 
     <section>
       <h2>Experience</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">CTO &amp; Co-Founder</div>
+            <div class="item-company">Civic-Chain</div>
+          </div>
+          <div class="item-date">2026 - Present</div>
+        </div>
+        <div class="item-description">
+          <ul>
+            <li>Infrastructure design and implementation following FIPS, SOC-II, and NIST SP 800-57 guidelines.</li>
+            <li>Design and implemented solicitation and proposal procurement process and procedures.</li>
+            <li>Implemented support for multiple stablecoins and FedNow ramps.</li>
+          </ul>
+        </div>
+      </div>
 
       <div class="item">
         <div class="item-header">
@@ -269,15 +467,15 @@
         </div>
         <div class="item-description">
           <ul>
-            <li>Architected auto-scaling infrastructure on AWS capable of handling 10x traffic spikes dur-ing major
+            <li>Architected auto-scaling infrastructure on AWS capable of handling 10x traffic spikes during major
               on-sale events, reducing page load times by 30%.</li>
             <li>Architected and deployed cloud-native applications using AWS services, reducing infrastructure costs by
               30%</li>
-            <li>Built infrastructure-as-code using Terraform and Terragrunt, reducing environment provi-sioning time
+            <li>Built infrastructure-as-code using Terraform and Terragrunt, reducing environment provisioning time
               from days to under 30 minutes.</li>
             <li>Developed CI/CD pipelines using GitHub Actions CI that enabled 50+ daily deployments with zero-downtime
               releases.</li>
-            <li>Automated infrastructure testing and security scanning, catching 80% of configuration is-sues before
+            <li>Automated infrastructure testing and security scanning, catching 80% of configuration issues before
               production.</li>
           </ul>
         </div>
@@ -286,7 +484,7 @@
       <div class="item">
         <div class="item-header">
           <div>
-            <div class="item-title">CTO</div>
+            <div class="item-title">CTO & Co-Founder</div>
             <div class="item-company">Genesis Volatility</div>
           </div>
           <div class="item-date">2018 - 2023</div>
@@ -351,8 +549,8 @@
         </div>
         <div class="skill-category">
           <h3>Frameworks</h3>
-          <p>jQuery, AngularJS, Backbone, Ruby on Rails 3, ExpressJS, Django, CakePHP, CodeIgniter, Si-natra, Magento,
-            PhoneGap, Gulp, Grunt, Karma, Protractor, Babel, React/Redux, Rwact Native, InfernoJS, VueJS</p>
+          <p>jQuery, AngularJS, Backbone, Ruby on Rails 3, ExpressJS, Django, CakePHP, CodeIgniter, Sinatra, Magento,
+            PhoneGap, Gulp, Grunt, Karma, Protractor, Babel, React/Redux, React Native, InfernoJS, VueJS</p>
         </div>
         <div class="skill-category">
           <h3>Cloud & DevOps</h3>
@@ -370,24 +568,33 @@
       <div class="item">
         <div class="item-description">
           <ul>
-            <li>InfernoJS - https://github.com/infernojs/inferno - Previously on the board of maintainers, implemented
-              the initial setup for inferno-redux located at https://github.com/durango/inferno/tree/inferno-redux</li>
-            <li>Go-Credit-Card - https://github.com/durango/go-credit-card - Credit card validator written in Go-lang
+            <li>Go-Credit-Card - <a
+                href="https://github.com/durango/go-credit-card">https://github.com/durango/go-credit-card</a> - Credit
+              card validator written in Go-lang
               using the Luhn algorithm. Was used in a major credit card processing company.</li>
-            <li>SequelizeJS - https://github.com/sequelize/sequelize - One of the first NodeJS ORMs. Core member,
+            <li>SequelizeJS - <a
+                href="https://github.com/sequelize/sequelize">https://github.com/sequelize/sequelize</a> - One of the
+              first NodeJS ORMs. Core member,
               oversees issues, implementation of hooks and various other helper methods.</li>
-            <li>Auth.net CIM - https://github.com/durango/authorize-net-cim - Authorize.net’s CIM API in NodeJS.
+            <li>Auth.net CIM - <a
+                href="https://github.com/durango/authorize-net-cim">https://github.com/durango/authorize-net-cim</a> -
+              Authorize.net’s CIM API in NodeJS.
               Previously featured within their documentation.</li>
-            <li>Author - Pakt Publishing “Supercharging Node.js Applications with Sequelize", published 2022 - ISBN13:
-              978-1801811552</li>
-            <li>Author - Pakt Publishing “Rust Standard Library Cookbook", published 2018 - ISBN13: 978-1788623926</li>
-            <li>Technical Reviewer - Pakt Publishing “Rust High Performance", published 2018 - ISBN13: 978-1788399487
+            <li>InfernoJS - <a href="https://github.com/infernojs/inferno">https://github.com/infernojs/inferno</a> -
+              Previously on the board of maintainers, implemented
+              the initial setup for inferno-redux located at <a
+                href="https://github.com/durango/inferno/tree/inferno-redux">https://github.com/durango/inferno/tree/inferno-redux</a>
             </li>
-            <li>Technical Reviewer - Pakt Publishing “PostgreSQL Developer’s Guide", published 2015 - ISBN13:
+            <li>Author — “Supercharging Node.js Applications with Sequelize” (Packt Publishing, 2022), ISBN-13:
+              9781801811552</li>
+            <li>Author — “Rust Standard Library Cookbook” (Packt Publishing, 2018), ISBN-13: 9781788623926</li>
+            <li>Technical Reviewer - Packt Publishing “Rust High Performance", published 2018 - ISBN13: 978-1788399487
+            </li>
+            <li>Technical Reviewer - Packt Publishing “PostgreSQL Developer’s Guide", published 2015 - ISBN13:
               978-1783989027</li>
-            <li>Technical Reviewer - Pakt Publishing “PostgresSQL 9.6 High Performance 2nd Edition” - ISBN13:
+            <li>Technical Reviewer - Packt Publishing “PostgreSQL 9.6 High Performance 2nd Edition” - ISBN13:
               978-1849510301</li>
-            <li>Technical Reviewer - Pakt Publishing “Rust Programming by Example” - ISBN13: 978-1788390637</li>
+            <li>Technical Reviewer - Packt Publishing “Rust Programming by Example” - ISBN13: 978-1788390637</li>
           </ul>
         </div>
       </div>
